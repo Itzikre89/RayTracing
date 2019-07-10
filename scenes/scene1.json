@@ -1,0 +1,131 @@
+{
+  "name": "scene1",
+  "maxRecursionLevel": 3,
+  "antiAliasingFactor": 1,
+  "renderRefarctions": true,
+  "renderReflections": true,
+  "camera": {
+    "mCameraPosition": {
+      "x": 0.0,
+      "y": 6.0,
+      "z": 1.0
+    },
+    "mTowardsVec": {
+      "x": 0.0,
+      "y": -0.8,
+      "z": -0.2
+    },
+    "mUpVec": {
+      "x": 0.0,
+      "y": -0.5,
+      "z": 0.5
+    },
+    "mDistanceToPlain": 2.0,
+    "mHeight": 200,
+    "mWidth": 200,
+    "mViewPlainWidth": 2.0
+  },
+  "ambient": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "backgroundColor": {
+    "x": 0.0,
+    "y": 0.5,
+    "z": 1.0
+  },
+  "lightSources": [
+    {
+      "CLASSNAME": "edu.cg.scene.lightSources.DirectionalLight",
+      "DATA": {
+        "direction": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -1.0
+        },
+        "intensity": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        }
+      }
+    },
+    {
+      "CLASSNAME": "edu.cg.scene.lightSources.PointLight",
+      "DATA": {
+        "position": {
+          "x": 2.5,
+          "y": 0.0,
+          "z": 1.0
+        },
+        "kq": 0.1,
+        "kl": 0.05,
+        "kc": 1.0,
+        "intensity": {
+          "x": 0.9,
+          "y": 0.9,
+          "z": 0.9
+        }
+      }
+    },
+    {
+      "CLASSNAME": "edu.cg.scene.lightSources.Spotlight",
+      "DATA": {
+        "direction": {
+          "x": -0.1,
+          "y": -0.1,
+          "z": -0.1
+        },
+        "position": {
+          "x": -2.5,
+          "y": 0.0,
+          "z": 1.0
+        },
+        "kq": 0.1,
+        "kl": 0.05,
+        "kc": 1.0,
+        "intensity": {
+          "x": 0.9,
+          "y": 0.9,
+          "z": 0.9
+        }
+      }
+    }
+  ],
+  "surfaces": [
+    {
+      "shape": {
+        "CLASSNAME": "edu.cg.scene.objects.Plain",
+        "DATA": {
+          "a": 0.0,
+          "b": 0.0,
+          "c": 1.0,
+          "d": -0.0
+        }
+      },
+      "material": {
+        "Ka": {
+          "x": 0.2,
+          "y": 0.2,
+          "z": 0.2
+        },
+        "Kd": {
+          "x": 0.4,
+          "y": 0.4,
+          "z": 0.4
+        },
+        "Ks": {
+          "x": 0.4,
+          "y": 0.4,
+          "z": 0.4
+        },
+        "reflectionIntensity": 0.2,
+        "shininess": 10,
+        "isTransparent": false,
+        "refractionIntensity": 0.3,
+        "refractionIndex": 1.5
+      }
+    }
+  ]
+}

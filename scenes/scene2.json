@@ -1,0 +1,133 @@
+{
+  "name": "scene2",
+  "maxRecursionLevel": 3,
+  "antiAliasingFactor": 1,
+  "renderRefarctions": true,
+  "renderReflections": true,
+  "camera": {
+    "mCameraPosition": {
+      "x": 4.0,
+      "y": 4.0,
+      "z": 1.5
+    },
+    "mTowardsVec": {
+      "x": -1.0,
+      "y": -1.0,
+      "z": -0.3
+    },
+    "mUpVec": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    },
+    "mDistanceToPlain": 3.0,
+    "mHeight": 200,
+    "mWidth": 200,
+    "mViewPlainWidth": 2.0
+  },
+  "ambient": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+  },
+  "backgroundColor": {
+    "x": 0.0,
+    "y": 0.5,
+    "z": 1.0
+  },
+  "lightSources": [
+    {
+      "CLASSNAME": "edu.cg.scene.lightSources.DirectionalLight",
+      "DATA": {
+        "direction": {
+          "x": -1.0,
+          "y": -1.0,
+          "z": -1.0
+        },
+        "intensity": {
+          "x": 0.9,
+          "y": 0.9,
+          "z": 0.9
+        }
+      }
+    },
+    {
+      "CLASSNAME": "edu.cg.scene.lightSources.PointLight",
+      "DATA": {
+        "position": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 1.5
+        },
+        "kq": 0.01,
+        "kl": 0.1,
+        "kc": 1.0,
+        "intensity": {
+          "x": 0.7,
+          "y": 0.7,
+          "z": 0.7
+        }
+      }
+    },
+    {
+      "CLASSNAME": "edu.cg.scene.lightSources.PointLight",
+      "DATA": {
+        "position": {
+          "x": 2.0,
+          "y": 1.0,
+          "z": 0.5
+        },
+        "kq": 0.01,
+        "kl": 0.1,
+        "kc": 1.0,
+        "intensity": {
+          "x": 0.7,
+          "y": 0.7,
+          "z": 0.7
+        }
+      }
+    }
+  ],
+  "surfaces": [
+    {
+      "shape": {
+        "CLASSNAME": "edu.cg.scene.objects.AxisAlignedBox",
+        "DATA": {
+          "minPoint": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "maxPoint": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "name": "Box 244"
+        }
+      },
+      "material": {
+        "Ka": {
+          "x": 0.8,
+          "y": 0.05,
+          "z": 0.05
+        },
+        "Kd": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Ks": {
+          "x": 0.9,
+          "y": 0.9,
+          "z": 0.9
+        },
+        "reflectionIntensity": 0.3,
+        "shininess": 10,
+        "isTransparent": false,
+        "refractionIntensity": 0.0,
+        "refractionIndex": 1.5
+      }
+    }
+  ]
+}
