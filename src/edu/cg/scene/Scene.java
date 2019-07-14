@@ -119,15 +119,11 @@ public class Scene {
 
 	private void initSomeFields(int imgWidth, int imgHeight, Logger logger) {
 		this.logger = logger;
-		// TODO: initialize your additional field here.
-		// You can also change the method signature if needed.
 	}
 
 	public BufferedImage render(int imgWidth, int imgHeight, double viewPlainWidth, Logger logger)
 			throws InterruptedException, ExecutionException {
-		// TODO: Please notice the following comment.
 		// This method is invoked each time Render Scene button is invoked.
-		// Use it to initialize additional fields you need.
 		initSomeFields(imgWidth, imgHeight, logger);
 
 		BufferedImage img = new BufferedImage(imgWidth, imgHeight, BufferedImage.TYPE_INT_RGB);
@@ -169,9 +165,6 @@ public class Scene {
 	
 	private Future<Color> calcColor(int x, int y) {
 		return executor.submit(() -> {
-			// TODO: You need to re-implement this method if you want to handle
-			// super-sampling. You're also free to change the given implementation as you
-			// like.
 			Point centerPoint = camera.transform(x, y);
 			Ray ray = new Ray(camera.getCameraPosition(), centerPoint);
 			Vec color = calcColor(ray, 0);
